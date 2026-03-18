@@ -74,5 +74,5 @@ def add_book(added_book: BookInput):
 def get_favorite_book():
     favorites = [b.book for b in books if b.favorite]
     if favorites:
-        return {"message": f"Любимая книга: {favorites}"}
+        return {"message": f"Любимые книги: {favorites}"}
     return {"message": "Пока нет ни одной книги"}
