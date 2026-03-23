@@ -121,7 +121,7 @@ class CategoryCreate(BaseModel):
     name: str
 
 class CategoryUpdate(BaseModel):
-    name: str | None = None
+    name: str
 
 categories: list[Category] = []
 @app.post("/categories", response_model=Category, status_code=status.HTTP_201_CREATED)
